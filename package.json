@@ -1,6 +1,6 @@
 {
   "name": "jhshop-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Um wrapper mysql para o plugin jh_shop!",
   "main": "Main.js",
   "repository": "https://github.com/bryzzen-kibador/jhshop-js",
