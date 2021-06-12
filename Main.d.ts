@@ -1,7 +1,6 @@
 declare function jhshop(argumentos: jhshop.mysqlarguments): jhshop.Mysql
 
 declare namespace jhshop {
-
     interface mysqlarguments {
         host: string
         port?: number
@@ -10,8 +9,13 @@ declare namespace jhshop {
         database: string
     }
 
-    class Mysql{
-        getUser(nick: string): Promise<string>
+    interface jogador {
+        Nome: string
+        Cash: number
+    }
+
+    class Mysql {
+        getUser(nick: string): Promise<jogador | undefined>
     }
 }
 
