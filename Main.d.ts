@@ -1,6 +1,6 @@
-declare function jhshop(argumentos: jhshop.mysqlarguments): jhshop.Client;
+declare function JHShop(argumentos: JHShop.mysqlarguments): JHShop.Client;
 
-declare namespace jhshop {
+declare namespace JHShop {
     interface mysqlarguments {
         host: string
         port?: number
@@ -17,7 +17,9 @@ declare namespace jhshop {
     class Client {
         argumentos: mysqlarguments
         getUser(nick: string): Promise<jogador | undefined>;
+        setUser(nick: string, cash: number): Promise<jogador>;
+        top(limit: number): Promise<jogador[]>;
     }
 }
 
-export = jhshop
+export = JHShop
