@@ -14,7 +14,7 @@ declare namespace jhshop {
         Cash: number
     }
 
-    class Mysql {
+    export class Mysql {
         getUser(nick: string): Promise<jogador | undefined>
     }
 }
